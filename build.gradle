@@ -5,7 +5,7 @@ apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: 'findbugs'
 
-mainClassName = 'org.maratik.Launcher'
+mainClassName = 'org.maratik.arena.calc.Launcher'
 
 sourceCompatibility = 1.8
 
