@@ -1,8 +1,9 @@
 group 'org.maratik'
-version '1.0.0-SNAPSHOT'
+version ''
 
 apply plugin: 'java'
 apply plugin: 'application'
+apply plugin: 'findbugs'
 
 mainClassName = 'org.maratik.Launcher'
 
@@ -14,11 +15,13 @@ repositories {
 }
 
 dependencies {
+    compile group: 'org.eclipse.jetty', name: 'jetty-webapp', version: 'latest.release'
     compile group: 'org.springframework', name: 'spring-webmvc', version: 'latest.release'
     compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: 'latest.release'
     compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: 'latest.release'
     compile group: 'org.apache.logging.log4j', name: 'log4j-jcl', version: 'latest.release'
     compile group: 'org.apache.logging.log4j', name: 'log4j-1.2-api', version: 'latest.release'
     compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: 'latest.release'
+    compile group: 'com.google.code.findbugs', name: 'annotations', version: 'latest.release'
     testCompile group: 'junit', name: 'junit', version: 'latest.release'
 }
