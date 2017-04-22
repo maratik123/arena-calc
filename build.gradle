@@ -2,6 +2,9 @@ group 'org.maratik'
 version '1.0.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'org.maratik.Launcher'
 
 sourceCompatibility = 1.8
 
