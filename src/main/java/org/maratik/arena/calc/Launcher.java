@@ -46,6 +46,9 @@ public class Launcher {
     private void startServer() throws Exception {
         LOG.debug("Initializing server");
         Server server = new Server(createThreadPool());
+
+        server.setStopAtShutdown(true);
+
         server.setConnectors(new Connector[]{createConnector(getPort(), server)});
 
         server.setHandler(createServletContextHandler(createContext()));

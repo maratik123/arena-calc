@@ -16,19 +16,19 @@ repositories {
 }
 
 dependencies {
-    compile group: 'org.eclipse.jetty', name: 'jetty-webapp', version: 'latest.release'
-    compile group: 'org.springframework', name: 'spring-webmvc', version: 'latest.release'
-    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: 'latest.release'
-    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: 'latest.release'
-    compile group: 'org.apache.logging.log4j', name: 'log4j-jcl', version: 'latest.release'
-    compile group: 'org.apache.logging.log4j', name: 'log4j-1.2-api', version: 'latest.release'
-    compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: 'latest.release'
-    compile group: 'com.google.code.findbugs', name: 'annotations', version: 'latest.release'
-    compile group: 'io.springfox', name: 'springfox-swagger2', version: 'latest.release'
-    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: 'latest.release'
-    compile group: 'com.google.guava', name: 'guava', version: 'latest.release'
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: 'latest.release'
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: 'latest.release'
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: 'latest.release'
-    testCompile group: 'junit', name: 'junit', version: 'latest.release'
+    compile group: 'org.eclipse.jetty', name: 'jetty-webapp', version: "${jettyVersion}"
+    compile group: 'org.springframework', name: 'spring-webmvc', version: "${springVersion}"
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: "${log4j2Version}"
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: "${log4j2Version}"
+    compile group: 'org.apache.logging.log4j', name: 'log4j-jcl', version: "${log4j2Version}"
+    compile group: 'org.apache.logging.log4j', name: 'log4j-1.2-api', version: "${log4j2Version}"
+    compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: "${log4j2Version}"
+    compile group: 'com.google.code.findbugs', name: 'annotations', version: "${findbugsVersion}"
+    compile group: 'io.springfox', name: 'springfox-swagger2', version: "${springfoxVersion}"
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: "$springfoxVersion"
+    compile group: 'com.google.guava', name: 'guava', version: "${guavaVersion}"
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: "${jacksonVersion}"
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: "${jacksonVersion}"
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: "${jacksonVersion}"
+    testCompile group: 'junit', name: 'junit', version: "${junitVersion}"
 }

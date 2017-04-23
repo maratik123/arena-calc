@@ -1,8 +1,9 @@
-package org.maratik.arena.calc.docs;
+package org.maratik.arena.calc.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -18,7 +19,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableSwagger2
 @EnableWebMvc
-public class SwaggerConfiguration {
+public class WebConfiguration extends WebMvcConfigurerAdapter {
     private static final long REQUEST_TIMEOUT = 60_000;
 
     @Bean
