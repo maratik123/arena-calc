@@ -1,7 +1,7 @@
 package org.maratik.arena.calc.controller;
 
 import io.swagger.annotations.ApiOperation;
-import org.maratik.arena.calc.model.BattleToken;
+import org.maratik.arena.calc.model.dto.BattleToken;
 import org.maratik.arena.calc.service.BattleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

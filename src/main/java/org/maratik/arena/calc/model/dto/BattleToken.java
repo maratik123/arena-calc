@@ -1,4 +1,4 @@
-package org.maratik.arena.calc.model;
+package org.maratik.arena.calc.model.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
