@@ -1,4 +1,4 @@
-package org.maratik.arena.calc.service.config;
+package org.maratik.arena.calc.docs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
