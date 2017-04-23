@@ -12,6 +12,7 @@ sourceCompatibility = 1.8
 repositories {
     mavenLocal()
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
@@ -23,5 +24,11 @@ dependencies {
     compile group: 'org.apache.logging.log4j', name: 'log4j-1.2-api', version: 'latest.release'
     compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: 'latest.release'
     compile group: 'com.google.code.findbugs', name: 'annotations', version: 'latest.release'
+    compile group: 'io.springfox', name: 'springfox-swagger2', version: 'latest.release'
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: 'latest.release'
+    compile group: 'com.google.guava', name: 'guava', version: 'latest.release'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: 'latest.release'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: 'latest.release'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: 'latest.release'
     testCompile group: 'junit', name: 'junit', version: 'latest.release'
 }
